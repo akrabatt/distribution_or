@@ -20,7 +20,7 @@ def create_db():  # создаем функцию по созданию БД
     phone = input('введите мобильный телефон: ')
     data.append(phone)
 
-    cur.execute('INSERT INTO clients_base VALUES(?, ?, ?, ?)', data)  # добавляем все элементы по колонкам из списка в БД
+    cur.execute('INSERT INTO clients_base VALUES(?, ?, ?, ?)', data)  # добавляем все элементы по колонкам из списка БД
     con.commit()
     cur.close()
     con.close()

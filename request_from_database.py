@@ -17,11 +17,11 @@ def request_bd(data_base, table, column_name = None):
         query = 'SELECT * FROM '+table  # все записи из всек колонок из таблицы
         cur.execute(query)
         data = cur.fetchall()
-    # print(data)
-    for i in range(len(data)):
-        emailes.append(data[i][2])
-        phones.append(data[i][3])
-    print(emailes, phones)
+    print(data)
+    # for i in range(len(data)):
+    #     emailes.append(data[i][2])
+    #     phones.append(data[i][3])
+    # print(emailes, phones)
     cur.close()
     con.close()
 
