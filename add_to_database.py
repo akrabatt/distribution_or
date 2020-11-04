@@ -15,7 +15,7 @@ def create_db():  # создаем функцию по созданию БД
     data.append(name)
     sername = input('введите фамилию: ')
     data.append(sername)
-    email = input('введите email : ')
+    email = input('введите email: ')
     data.append(email)
     phone = input('введите мобильный телефон: ')
     data.append(phone)

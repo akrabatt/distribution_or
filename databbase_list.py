@@ -7,7 +7,7 @@ table = 'clients_base'
 file = 'test.txt'
 
 
-def database_print_list(data_base, table, column_name = None):
+def database_print_list(data_base, table, column_name=None):
     con = sqlite3.connect('test_data_base.db')  # конектимся с БД
     cur = con.cursor()  # создаём объект курсор для дальнейшей работы с ним
     query_name = 'pragma table_info(' + table + ')'  # узнаем наименование колонок
@@ -17,7 +17,7 @@ def database_print_list(data_base, table, column_name = None):
         query = 'SELECT * FROM ' + table  # все записи из всек колонок из таблицы
         cur.execute(query)
         data = cur.fetchall()
-    print(data)
+    # print(data)
     file_database = open('test.txt', 'w')
     for i in range(len(data)):
         file_database.write('\n')

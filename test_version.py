@@ -1,6 +1,7 @@
 import  add_to_database
 import request_from_database
 import delete_from_datatbase
+import databbase_list
 
 data_base = '/test_data_base.db'
 table = 'clients_base'
@@ -20,6 +21,6 @@ elif num == 2:
 elif num == 3:
     delete_from_datatbase.delete_from_db()
 elif num ==4:
-    pass
+    databbase_list.database_print_list(data_base, table)
 else:
     print('вы ввели неверное значение')
